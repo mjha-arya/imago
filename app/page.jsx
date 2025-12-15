@@ -57,7 +57,7 @@ export default function WitnessDemo() {
     >
       
       {/* --- VISUAL STAGE --- */}
-      <section className="h-[29vh] relative flex items-center justify-center gap-12 md:gap-32 overflow-hidden bg-gradient-to-b from-[#FFFDF9] to-[#f8f4e9]">
+      <section className="h-[34vh] relative flex items-center justify-center gap-12 md:gap-32 overflow-hidden bg-gradient-to-b from-[#FFFDF9] to-[#f8f4e9]">
         
         {/* Background Atmosphere */}
         <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] bg-amber-100/50 rounded-full blur-3xl transition-all duration-1000 ${isProcessing ? "scale-110 opacity-80" : "scale-100 opacity-30"}`} />
@@ -118,7 +118,7 @@ export default function WitnessDemo() {
               className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div 
-                className={`max-w-[85%] md:max-w-2xl p-8 rounded-[2.5rem] text-2xl leading-relaxed shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-500
+                className={`max-w-[85%] md:max-w-2xl p-8 rounded-[2.5rem] text-lg leading-relaxed shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-500
                 ${msg.role === 'user' 
                   ? 'bg-stone-100 text-stone-700 rounded-br-none' 
                   : 'bg-[#fefaf3] text-amber-900 rounded-bl-none border border-amber-100/50'}`}
@@ -148,7 +148,7 @@ export default function WitnessDemo() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Share your burden here..."
-              className="w-full bg-stone-50 border border-stone-200 text-stone-800 placeholder-stone-400 rounded-full py-8 pl-10 pr-44 text-2xl focus:outline-none focus:border-amber-300 focus:ring-4 focus:ring-amber-50 transition-all shadow-inner"
+              className="w-full bg-stone-50 border border-stone-200 text-stone-800 placeholder-stone-400 rounded-full py-8 pl-10 pr-44 text-lg  focus:outline-none focus:border-amber-300 focus:ring-4 focus:ring-amber-50 transition-all shadow-inner"
             />
             <button 
               type="submit"
